@@ -3,7 +3,6 @@ Feature: Demonstrate Behat and the Drupal Extension
   As a presenter at PNWDS 2012
   I need to use the step definitions of the Drupal Extension
 
-  @api
   Scenario: Test the functionality of drush aliases
     Given I am logged in as a user with the "administrator" role
     When I click "Add content"
@@ -17,3 +16,9 @@ Feature: Demonstrate Behat and the Drupal Extension
     And I click "manage fields" in the "Article" row
     Then I should be on "admin/structure/types/manage/article/fields"
     And I should see text matching "Add new field"
+
+#  @api @javascript
+#  Scenario: Test the ability to create new step-definitions
+#    Given I am logged in as a user with the "administrator" role
+#    When I click "My account"
+#    Then ponies and unicorns should rain down from the sky
