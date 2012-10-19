@@ -5,5 +5,9 @@ default:
     Behat\MinkExtension\Extension:
       goutte: ~
       selenium2: ~
-      base_url: http://git6site.devdrupal.org/
+      base_url: http://d7.dev
+      show_cmd: "firefox %s"
     Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      drush:
+        alias: @d7
